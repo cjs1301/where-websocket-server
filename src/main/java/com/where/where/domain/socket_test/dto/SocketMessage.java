@@ -1,19 +1,17 @@
 package com.where.where.domain.socket_test.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class SocketMessage {
     private String type;
     private String sender;
     private String channelId;
-    private Object data;
+    private Coordinates coordinates;
 
     public void setSender(String sender) {
         this.sender = sender;
