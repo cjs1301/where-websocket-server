@@ -11,11 +11,11 @@ Resources:
     Properties:
       CodeUri: .
       Handler: com.where.api.StreamLambdaHandler::handleRequest
-      Runtime: java11
+      Runtime: java17
       SnapStart:
         ApplyOn: PublishedVersions
       Architectures:
-        - x86_64
+        - arm64
       MemorySize: 2048
       Timeout: 60
       Events:
