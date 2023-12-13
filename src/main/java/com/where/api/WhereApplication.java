@@ -1,4 +1,4 @@
-package com.where.where;
+package com.where.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

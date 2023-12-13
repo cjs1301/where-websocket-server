@@ -1,6 +1,6 @@
-package com.where.where.domain.socket_test;
+package com.where.api.domain.socket_test;
 
-import com.where.where.domain.socket_test.dto.SocketMessage;
+import com.where.api.domain.socket_test.dto.SocketMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.handler.annotation.MessageMapping;

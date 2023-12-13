@@ -1,4 +1,4 @@
-package com.where.where.domain.socket_test.dto;
+package com.where.api.domain.socket_test.dto;
 
 
 import lombok.AllArgsConstructor;
