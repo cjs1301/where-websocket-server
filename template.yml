@@ -11,7 +11,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: com.where.api.StreamLambdaHandler::handleRequest
-      Runtime: java17
+      Runtime: java11
       SnapStart:
         ApplyOn: PublishedVersions
       Architectures:
