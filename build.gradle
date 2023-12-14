@@ -25,22 +25,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	implementation 'net.minidev:json-smart:2.5.0'
-	implementation 'com.amazonaws.serverless:aws-serverless-java-container-springboot3:2.0.0-M2'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-task buildZip(type: Zip) {
-	from compileJava
-	from processResources
-	into('lib') {
-		from(configurations.compileClasspath) {
-			exclude 'tomcat-embed-*'
-		}
-	}
-}
-
 tasks.named('test') {
 	useJUnitPlatform()
+}
+bootJar {
+	archiveBaseName.set('where')
+}
+jar{
+	archiveBaseName.set('where')
 }
