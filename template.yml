@@ -15,7 +15,7 @@ Resources:
       SnapStart:
         ApplyOn: PublishedVersions
       Architectures:
-        - arm64
+        - x86_64
       MemorySize: 2048
       Timeout: 60
       Events:
