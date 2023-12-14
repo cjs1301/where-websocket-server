@@ -46,8 +46,8 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v2
         with:
-          name: trelloServer
-          path: build/libs/trelloServer-0.0.1-SNAPSHOT.jar
+          name: where
+          path: build/libs/where-0.0.1-SNAPSHOT.jar
 
   # 배포 **
   deploy:
