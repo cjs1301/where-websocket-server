@@ -29,9 +29,9 @@ public class StreamLambdaHandler implements RequestStreamHandler {
     }
     @Override
     public void handleRequest(InputStream input, OutputStream output, Context context)throws IOException{
-        log.info("InputStream",input);
-        log.info("OutputStream",output);
-        log.info("Context",context);
+        System.out.println(input);
+        System.out.println(output);
+        System.out.println(context);
         handler.proxyStream(input,output,context);
     }
 }
