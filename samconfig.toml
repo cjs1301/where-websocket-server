@@ -3,7 +3,7 @@ version = 0.1
 [default]
 [default.global]
 [default.global.parameters]
-stack_name = "sam-app"
+stack_name = "where-server-sam-app"
 
 [default.build.parameters]
 cached = true
