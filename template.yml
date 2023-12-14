@@ -16,6 +16,8 @@ Resources:
         ApplyOn: PublishedVersions
       Architectures:
         - x86_64
+      Policies:
+        - AWSLambdaBasicExecutionRole
       MemorySize: 2048
       Timeout: 60
       Events:
